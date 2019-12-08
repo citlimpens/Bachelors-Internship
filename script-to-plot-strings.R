@@ -1,6 +1,6 @@
   rm(list = ls())
   
-  tabla = read.csv('14.tas01-bk-start-end-pos-rep-xv7-filt1.csv', header = TRUE,)
+    tabla = read.csv('18.-top100-more-than1000-but-less-than-8150-tas07-6-15DR', header = TRUE,)
   print(names(tabla))
   attach(tabla)
   

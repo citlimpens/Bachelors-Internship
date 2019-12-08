@@ -1,8 +1,8 @@
 rm(list = ls())
 
-file = "9.-id--start-nt--end-nt--start-end-frequency-tas12-ready-for-DR-determinate"
+file = "11.tas01-bk-start-end-pos-rep"
 
-tabla = read.table(file, header = FALSE, sep = " ")
+tabla = read.table(file, header = FALSE, sep = ",")
 
 print(names(tabla))
 attach(tabla)
@@ -30,6 +30,6 @@ XV7 = IdenticasIZQ_DER(XV2, XV3)
 
 
 mat = data.frame(XV1,XV2, XV3, XV4, XV5, XV6, XV7)
-write.table(mat, '10.-tas12-table-to-string-script-plot-DR-by-color-and-string.csv', sep=',', row.names = FALSE)
+write.table(mat, '11.tas01-bk-start-end-pos-rep-xv7.csv', sep=',', row.names = FALSE)
 
 
